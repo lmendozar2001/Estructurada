@@ -16,10 +16,27 @@ public class Main {
      */
     public static void main(String[] args) {
         MyArray<String> ar = new MyArray<String>();
+        LinkedList<Integer> ls = new LinkedList<>();
         
-        ar.add("Prueba");
-        ar.add("N");
-        System.out.println(ar.size());
+        ls.addback(2);
+        ls.addback(4);
+        ls.addfront(7);
+        ls.addfront(73);
+       
+        ls.removeFront();
+        ls.removeFront();
+        ls.removeBack();
+        ls.removeBack();
+        
+        System.out.println(ls.frontEle());
+        System.out.println(ls.backEle());
+        
+        System.out.println(ls.findKey(73));
+        System.out.println(ls.size());
+        
+        
+        
+        
     }
     
 }

@@ -9,7 +9,7 @@ package newpackage;
  *
  * @author Keynes Stephens Watson
  */
-public class MyArray<T>{
+public class MyArray<T> implements List<T>{
     private T[] ele;
     private int size;
     private int capacity;
