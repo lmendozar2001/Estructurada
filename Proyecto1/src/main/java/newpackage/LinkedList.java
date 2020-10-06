@@ -146,6 +146,16 @@ public class LinkedList<T> {
     }
     
     public void printList(){
-        
+        if(isEmpty()){
+            System.out.println("Lista Vacia");
+        }
+        Nodes<T> p = this.head;
+        int i=1;
+        while(p!=null){
+            
+            System.out.println(i+": "+p.data);
+            p = p.next;
+            i++;
+        }
     }
 }

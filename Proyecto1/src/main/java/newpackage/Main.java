@@ -23,16 +23,15 @@ public class Main {
         ls.addfront(7);
         ls.addfront(73);
        
-        ls.removeFront();
-        ls.removeFront();
-        ls.removeBack();
-        ls.removeBack();
+        
         
         System.out.println(ls.frontEle());
         System.out.println(ls.backEle());
         
         System.out.println(ls.findKey(73));
         System.out.println(ls.size());
+        
+        ls.printList();
         
         
         
