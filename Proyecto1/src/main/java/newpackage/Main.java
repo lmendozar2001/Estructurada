@@ -15,23 +15,23 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyArray<String> ar = new MyArray<String>();
-        LinkedList<Integer> ls = new LinkedList<>();
+        MyArray<Integer> ar = new MyArray<>();
+        LinkedList<Integer> ll = new LinkedList<>();
+        LinkedStack<String> lss = new LinkedStack<>();
+        ArrayStack<Integer> ls = new ArrayStack<>(100);
         
-        ls.addback(2);
-        ls.addback(4);
-        ls.addfront(7);
-        ls.addfront(73);
-       
+        ar.add(21);
+        ar.add(22);
+        ar.add(23);
+        ar.add(24);
+        ar.add(25);
+    
+        System.out.println(" "+ar.remove(0));
+        
+        System.out.println(ar.size());
         
         
-        System.out.println(ls.frontEle());
-        System.out.println(ls.backEle());
         
-        System.out.println(ls.findKey(73));
-        System.out.println(ls.size());
-        
-        ls.printList();
         
         
         

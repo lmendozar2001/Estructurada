@@ -5,7 +5,7 @@
  */
 package newpackage;
 
-import newpackage.Nodes;
+
 
 /**
  *
@@ -140,6 +140,23 @@ public class LinkedList<T> {
         }
         return b;
     }
+    
+    public Nodes<T> retKey(T key){
+        Nodes<T> rno = null;
+        Nodes<T> aux = this.head;
+        
+        while(aux!=null){
+            if(aux.data==key){
+                rno = aux;
+                break;
+            }
+            aux = aux.next;
+        }
+        if(aux.data!=key){
+            return null;
+        }
+        return rno;
+    }
 
     public int size(){
         return size;
@@ -157,5 +174,17 @@ public class LinkedList<T> {
             p = p.next;
             i++;
         }
+    }
+    
+    
+    public void addAfter(Nodes<T> node, T key){
+        Nodes<T> n = new Nodes<T>(key);
+        n.next = node.next;
+        node.next = n;
+        
+        if(this.tail==node){
+            this.tail = n;
+        }
+        
     }
 }
