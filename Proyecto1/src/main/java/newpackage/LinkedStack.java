@@ -51,7 +51,7 @@ public class LinkedStack<T> implements Stacks<T>{
     
     public T top() {
          if(isEmpty()){
-             return null;
+             throw new EmptyStackException( );
          }
         return this.top.data;
     }

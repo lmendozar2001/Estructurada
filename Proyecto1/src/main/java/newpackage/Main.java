@@ -15,20 +15,25 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyArray<Integer> ar = new MyArray<>();
-        LinkedList<Integer> ll = new LinkedList<>();
-        LinkedStack<String> lss = new LinkedStack<>();
-        ArrayStack<Integer> ls = new ArrayStack<>(100);
+        //MyArray<Integer> ar = new MyArray<>(11);
+        //LinkedList<Integer> ll = new LinkedList<>();
+        //LinkedStack<String> lss = new LinkedStack<>();
+        //ArrayStack<Integer> ls = new ArrayStack<>(10);
+        //ArrayQueue<Integer> aq = new ArrayQueue<>(20);
+        LinkedQueue<Integer> aq = new LinkedQueue<Integer>();
         
-        ar.add(21);
-        ar.add(22);
-        ar.add(23);
-        ar.add(24);
-        ar.add(25);
-    
-        System.out.println(" "+ar.remove(0));
+        aq.enqueue(5);
+        aq.enqueue(6);
+        aq.enqueue(7);
+        aq.enqueue(8);
         
-        System.out.println(ar.size());
+        
+        
+        
+        System.out.println(aq.peek());
+        System.out.println(aq.size());
+       
+       
         
         
         

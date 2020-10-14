@@ -5,6 +5,8 @@
  */
 package newpackage;
 
+import java.util.EmptyStackException;
+
 
 
 /**
@@ -62,7 +64,7 @@ public class LinkedList<T> {
     public void removeFront(){
         
         if(isEmpty()){
-            System.out.println("Se elimino el elemento del principio");
+            throw new EmptyStackException( );
         }
 
         if(this.head==this.tail){
@@ -78,7 +80,7 @@ public class LinkedList<T> {
     public void removeBack(){
        
         if(isEmpty()){
-            System.out.println("Se elimino el elemento final");
+            throw new EmptyStackException( );
         }
 
         if(this.head==this.tail){
@@ -100,7 +102,7 @@ public class LinkedList<T> {
     
     public T frontEle(){
         if(isEmpty()){
-            return null;
+            throw new EmptyStackException( );
         }
         return this.head.data;
     }
@@ -110,7 +112,7 @@ public class LinkedList<T> {
         Nodes<T> aux = this.head;
         Nodes<T> s = null;
         if(isEmpty()){
-            return null;
+            throw new EmptyStackException( );
         }else{
             while(aux!=null){
                 s = aux;
@@ -164,7 +166,7 @@ public class LinkedList<T> {
     
     public void printList(){
         if(isEmpty()){
-            System.out.println("Lista Vacia");
+            throw new EmptyStackException( );
         }
         Nodes<T> p = this.head;
         int i=1;
