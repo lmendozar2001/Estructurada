@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package newpackage;
+import newpackage1.Usuario;
 
 /**
  *
@@ -22,18 +23,9 @@ public class Main {
         //ArrayQueue<Integer> aq = new ArrayQueue<>(20);
         LinkedQueue<Integer> aq = new LinkedQueue<Integer>();
         
-        aq.enqueue(5);
-        aq.enqueue(6);
-        aq.enqueue(7);
-        aq.enqueue(8);
         
-        
-        
-        
-        System.out.println(aq.peek());
-        System.out.println(aq.size());
-       
-       
+       Usuario v = new Usuario();
+       v.setVisible(true);
         
         
         
